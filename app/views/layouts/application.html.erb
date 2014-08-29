@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote Já - Crie votações automatizadas na sua organização</title>
+  <meta name="description" content="Votações automatizadas para organizações">
+  <meta name="keywords" content="votação online, automatização, eleição, organizacional" />
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "bootstrap-responsive", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %> 
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="wrapper" class="container">
+		<div align="center" style="width:100%; height:auto; margin-top: 80px;">
+			<h1 class="custom-h1" style="display: inline;">
+				<%= link_to "Vote Já", '/', style: "text-decoration: none; color:#FFCC33 ;text-shadow: -1px 0 #3399FF, 0 4px #3399FF, 4px 0 #3399FF, 0 -1px #3399FF;" %>
+			</h1>
+		</div>
+		<hr>
+		<%= yield %>
+	</div>
+	 
+</body>
+</html>
